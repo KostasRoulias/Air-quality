@@ -1,1 +1,2 @@
-# Air-quality
+project: Air-quality
+developer: Konstantinos Roulias
