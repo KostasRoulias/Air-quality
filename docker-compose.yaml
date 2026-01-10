@@ -19,14 +19,14 @@ services:
     volumes:
       - pgadmin-data:/var/lib/pgadmin
     depends_on:
-      - postgresdb
+      - postgres-db
 
   weather:
     build: ./load_weather
     volumes:
       - ./weather-postgres/csv:/app/csv
     depends_on:
-      - postgresdb
+      - postgres-db
 
 volumes:
   postgres-data:
