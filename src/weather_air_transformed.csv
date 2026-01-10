@@ -1,6 +1,0 @@
-city,lat,lon,time,temp_c,humidity_pct,wind_speed_ms,weather_code,weather_desc,aqi_eu,pm25,no2,o3
-Lisbon,38.7167,-9.1333,2026-01-10 14:30:00,13.4,66,1.8,3,"Mainly clear, partly cloudy, and overcast",21,10.4,25.6,42.0
-Thessaloniki,40.6436,22.9309,2026-01-10 14:30:00,10.0,84,4.1,3,"Mainly clear, partly cloudy, and overcast",26,5.6,8.9,60.0
-Brussels,50.8505,4.3488,2026-01-10 14:30:00,-0.4,71,10.8,3,"Mainly clear, partly cloudy, and overcast",18,9.5,19.6,45.0
-Barcelona,41.3888,2.159,2026-01-10 14:30:00,12.3,47,15.3,2,"Mainly clear, partly cloudy, and overcast",25,2.4,6.8,63.0
-Berlin,52.5244,13.4105,2026-01-10 14:30:00,-3.0,71,6.3,0,Clear Sky,25,6.1,11.8,62.0
