@@ -1,0 +1,36 @@
+version: "3"
+services:
+  postgres-db:
+    image: postgres
+    container_name: postgres-db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: docker
+    volumes:
+      - postgres-data:/var/lib/postgresql
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 8080:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@domain.com # environment variables required
+      PGADMIN_DEFAULT_PASSWORD: docker
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - postgresdb
+
+  weather:
+    build: ./load_weather
+    volumes:
+      - ./weather-postgres/csv:/app/csv
+    depends_on:
+      - postgresdb
+
+volumes:
+  postgres-data:
+  pgadmin-data:
+## sudo apt  install docker-compose
+## docker-compose up -d
+## docker-compose down
