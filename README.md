@@ -162,9 +162,9 @@ Clean and extensible architecture
 
 The following screenshots are recommended to visually document the project and its execution:
 
--**Architecture Diagram**  
- High-level overview of the ETL pipeline, showing the data flow from the Open-Meteo APIs through the Python ETL service into PostgreSQL, with Docker and the VM as the underlying infrastructure.
-![Architecture Diagram](screenshots/architecture.png)
+- **Architecture Diagram**  
+   High-level overview of the ETL pipeline, showing the data flow from the Open-Meteo APIs through the Python ETL service into PostgreSQL, with Docker and the VM as the underlying infrastructure.
+  ![Architecture Diagram](screenshots/architecture.png)
 
 - **Docker Containers Running**  
   Output of `docker ps`, demonstrating that all services (PostgreSQL, pgAdmin, and the ETL container) are up and running.
@@ -177,4 +177,5 @@ The following screenshots are recommended to visually document the project and i
 📬 Contact
 
 linkedin: https://www.linkedin.com/in/konstantinosroulias/
+
 GitHub: https://github.com/KostasRoulias
