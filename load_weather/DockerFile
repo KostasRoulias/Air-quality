@@ -19,7 +19,7 @@ RUN mkdir -p /app/csv
 # register a cron job to start the webscraper application
 # it needs the absolute paths (runnning 'which python' inside the container might be useful)
 # also keep logs
-RUN crontab -l | { cat; echo "0 0 1 * * cd /app && /usr/local/bin/python /app/load.py >> /var/log/cron.log 2>&1"; } | crontab -
+RUN crontab -l | { cat; echo "*/5 * * * * cd /app && /usr/local/bin/python /app/load.py >> /var/log/cron.log 2>&1"; } | crontab -
 
 
 # start cron in foreground and set it as executable command for when the container starts 
